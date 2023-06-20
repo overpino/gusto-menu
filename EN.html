@@ -1,10 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width">
-  </head>
-  <body>
-    <object data="menu/ENgusto-menu.pdf" type="application/pdf" style="min-height:100vh;width:100%"></object>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .container {
+      height: 100%;
+      overflow: auto;
+    }
+
+    .image {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        padding-left: 400px;
+        padding-right: 400px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="menu/EN/merge.webp" class="image" />
+  </div>
+</body>
 </html>

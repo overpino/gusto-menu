@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gusto - linguaggio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url("assets/bg.webp");
+            background-repeat: repeat;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px; /* Aumenta lo spazio tra il logo e la prima bandiera */
+        }
+
+        .logo img {
+            max-width: 270px; /* Regola le dimensioni del logo */
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: calc(100vh - 150px); /* Sottrae l'altezza del logo e lo spazio tra il logo e la prima bandiera */
+            overflow-y: false; /* Aggiunge una barra di scorrimento verticale quando necessario */
+        }
+
+
+        .image-link {
+            margin-bottom: 30px;
+            max-height: calc(20vh - 30px);
+        }
+
+        .responsive-image {
+            max-width: 100%;
+            max-height: 100%;
+            height: auto;
+            width: auto;
+            object-fit: contain;
+        }
+
+        @media (min-width: 768px) {
+            .responsive-image {
+                max-height: calc(15vh - 30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="assets/logo.webp" alt="Logo">
+    </div>
+    <div class="image-container">
+        <a class="image-link" href="IT.html">
+            <img class="responsive-image" src="assets/IT.webp" alt="Italian">
+        </a>
+
+        <a class="image-link" href="EN.html">
+            <img class="responsive-image" src="assets/EN.webp" alt="English">
+        </a>
+
+        <a class="image-link" href="ES.html">
+            <img class="responsive-image" src="assets/ES.webp" alt="Spanish">
+        </a>
+
+        <a class="image-link" href="FR.html">
+            <img class="responsive-image" src="assets/FR.webp" alt="French">
+        </a>
+
+        <a class="image-link" href="DE.html">
+            <img class="responsive-image" src="assets/DE.webp" alt="German">
+        </a>
+    </div>
+</body>
+</html>
